@@ -1,0 +1,78 @@
+/* Style for the entire Navbar */
+.fixed.w-full {
+    width: 100%;
+    position: fixed;
+    background: linear-gradient(135deg, #dbeef2, #217c9a); 
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #e2e8f0; /* light gray border */
+  }
+  
+  /* Internal padding and layout adjustments */
+  .fixed.w-full > div {
+    padding: 0 rem; /* Adjust top and bottom padding */
+  }
+  
+  /* Using Container for proper alignment and spacing */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Tobias Bold'
+  }
+  
+  /* Style adjustments for Logo, Search, and BarTools */
+  .logo, .search, .bar-tools {
+    flex-grow: 1;
+    color:#000;
+  }
+  
+  .logo {
+    flex-grow: 0;
+    flex-basis: auto;
+  }
+  
+  .search {
+    flex-grow: 2;
+    color:#000;
+  }
+  
+  .bar-tools {
+    flex-grow: 1;
+    font-family: 'Tobias Bold'
+  }
+  
+  /* Additional style for Navbar list as defined earlier */
+  .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .navbar-list li {
+    display: inline-block;
+  }
+  
+  .navbar-list a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s, background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+  }
+  
+  .navbar-list a:hover, .navbar-list a:focus {
+    color: #000;
+    background-color: #0a0a0a;
+    transform: scale(1.05);
+    box-shadow: 0 2px 8px rgba(255,255,255,0.5);
+  }
+  

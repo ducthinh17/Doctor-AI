@@ -1,0 +1,36 @@
+.navbar {
+  padding: 0.5rem 0; /* Đệm trên và dưới */
+  font-family: 'Tobias Bold';
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; /* Căn chỉnh các phần tử theo chiều dọc */
+}
+
+.navbar-list li {
+  display: inline-block; /* Đảm bảo các phần tử li hiển thị trên một hàng ngang */
+}
+
+.navbar-list a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff; /* Màu chữ trắng */
+  font-weight: 500; /* Độ dày chữ */
+  text-transform: uppercase; /* Chữ in hoa */
+  transition: color 0.3s, background-color 0.3s, transform 0.3s; /* Hiệu ứng chuyển đổi */
+  border-radius: 5px; /* Bo góc */
+}
+
+.navbar-list a:hover, .navbar-list a:focus {
+  color: #000; /* Màu chữ đen */
+  background-color: #ffffff; /* Màu nền trắng */
+  transform: scale(1.05); /* Phóng to khi di chuột */
+  box-shadow: 0 2px 8px rgba(255,255,255,0.5); /* Bóng cho liên kết khi di chuột */
+  font-family: 'Tobias Bold';
+}

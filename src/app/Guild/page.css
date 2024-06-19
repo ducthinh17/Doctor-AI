@@ -1,0 +1,61 @@
+
+.banner {
+    display: flex;
+    align-items: center;
+    background-color: #00507c;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .banner-image {
+    width: 50%;
+    object-fit: cover; /* ensure the image covers the designated area without distorting its aspect ratio */
+  }
+  @media (max-width: 768px) {
+    .banner {
+      flex-direction: column;
+    }
+    
+    .content, .banner-image {
+      width: 100%;
+    }
+  }
+    
+  .content {
+    padding: 20px;
+    width: 50%;
+  }
+  
+  h1 {
+    font-family: 'Tobias Bold';
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-size: 44px;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  ul {
+    list-style-type: none;
+    padding-left: 24px;
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #ffffff; /* darker text for better readability */
+  }
+  .container{
+    padding-top:80px;
+  }
+  .step-image{
+    width: 1300px;
+    height:800px;
+    align-items: center;
+    justify-self: center;;
+  }
