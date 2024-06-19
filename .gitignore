@@ -12,6 +12,9 @@ coverage
 
 # production
 .next
+cache
+server
+types
 .swc
 _static
 out
