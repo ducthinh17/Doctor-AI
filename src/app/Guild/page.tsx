@@ -8,7 +8,7 @@ const GUILD: React.FC = () => {
         <div className="container">
           <div className="banner">
             <img
-              src="../images/explore-4.png"
+              src="/images/explore-4.png"
               alt="Online Consultation"
               className="banner-image"
             />
@@ -28,7 +28,7 @@ const GUILD: React.FC = () => {
           </div>
         </div>
         <img
-          src="../images/step.png"
+          src="/images/step.png"
           alt="Online Consultation"
           className="step-image"
         />
