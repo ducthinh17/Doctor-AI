@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Suspense } from "react";
 
 const Donate: React.FC = () => {
   return (
@@ -9,6 +9,7 @@ const Donate: React.FC = () => {
           justifyContent: "center",
           alignItems: "center",
           display: "flex",
+          paddingTop: "100px",
         }}
       >
         <img
@@ -18,10 +19,6 @@ const Donate: React.FC = () => {
           style={{
             width: "80%",
             height: "380px",
-            paddingTop: "100px",
-            justifyContent: "center",
-            alignItems: "center",
-            display: "flex",
           }}
         />
       </div>
@@ -32,17 +29,20 @@ const Donate: React.FC = () => {
           height: "100%",
           display: "flex",
           justifyContent: "center",
+          paddingTop: "20px",
         }}
       >
-        <iframe
-          className="form"
-          title="Donation Form"
-          src="https://docs.google.com/forms/d/e/1FAIpQLScz_cduoWGxFwQIuiKTKtRbZQIUyoSV8bADiNGk46hUQmvtYw/viewform?embedded=true"
-          width="1040"
-          height="5521"
-        >
-          Loading…
-        </iframe>
+        <Suspense fallback={<div>Loading form...</div>}>
+          <iframe
+            className="form"
+            title="Donation Form"
+            src="https://docs.google.com/forms/d/e/1FAIpQLScz_cduoWGxFwQIuiKTKtRbZQIUyoSV8bADiNGk46hUQmvtYw/viewform?embedded=true"
+            width="1040"
+            height="5521"
+          >
+            Loading…
+          </iframe>
+        </Suspense>
       </div>
     </div>
   );
