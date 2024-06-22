@@ -1,5 +1,5 @@
 "use client";
-
+import { QueryClient, QueryClientProvider } from "react-query";
 import React from "react";
 import Logo from "./Logo";
 import Container from "../Container";

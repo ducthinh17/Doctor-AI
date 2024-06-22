@@ -21,7 +21,7 @@ const BarTools = () => {
           <a href="/About-Us">About Us</a>
         </li>
         <li>
-          <a href="/About-Us">Donate</a>
+          <a href="/Donate">Survey</a>
         </li>
       </ul>
     </nav>

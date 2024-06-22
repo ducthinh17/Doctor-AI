@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "@tensorflow/tfjs": "^4.20.0",
-    "next": "14.1.0",
+    "next": "^14.2.4",
     "react": "^18.3",
     "react-dom": "^18.3",
+    "react-hook-form": "^7.52.0",
+    "react-query": "^3.39.3",
     "thirdweb": "^5"
   },
   "devDependencies": {
