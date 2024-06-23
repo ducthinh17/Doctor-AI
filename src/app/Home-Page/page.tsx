@@ -10,7 +10,7 @@ const HomePage: React.FC = () => {
       <br />
       <div className="banner">
         <img
-          src="../images/online-doctor.jpg"
+          src="../images/online-doctor.png"
           alt="Online Consultation"
           className="banner-image"
         />
