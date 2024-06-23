@@ -1,13 +1,13 @@
 "use client";
-import { QueryClient, QueryClientProvider } from "react-query";
-import React from "react";
-import Logo from "./Logo";
+import type React from "react";
+import { Suspense } from "react";
 import Container from "../Container";
+import Logo from "./Logo";
 import Search from "./Search";
 import "./Navbar.css";
 
 import BarTools from "./BarTools";
-interface NavbarProps {}
+type NavbarProps = {};
 export const Navbar: React.FC<NavbarProps> = ({}) => {
   return (
     <div className="fixed w-full bg-white z-10 shadow-sm">
@@ -15,7 +15,9 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
         <Container>
           <div className="flex flex-row justify-between items-center gap-3 md:gap-0">
             <Logo />
-            <Search />
+            <Suspense>
+              <Search />
+            </Suspense>
             <BarTools />
           </div>
         </Container>
