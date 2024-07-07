@@ -21,6 +21,9 @@ const BarTools = () => {
           <a href="/About-Us">About Us</a>
         </li>
         <li>
+          <a href="https://ducthinh17.github.io/metaplex#/">NFTs</a>
+        </li>
+        <li>
           <a href="/Donate">Survey</a>
         </li>
       </ul>
